@@ -1,3 +1,48 @@
 *{
    max-width: 1200px;
 }
+
+.flexcontainer{
+   display: flex;
+}
+
+body{
+   font-family: 'Lato', sans-serif;
+   font-weight: 300;
+   color: #2d3c49;
+}
+
+hr{
+   border-style: solid;
+   border-color: #7d97ad;
+   border-width: 2px;
+}
+
+.title{
+   padding-top: 15px;
+   padding-bottom: 10px;
+}
+
+.title h1{
+   font-size: 52px;
+   font-weight: 100;
+}
+
+.title h4{
+   font-size: 24px;
+}
+
+.section-title{
+   font-weight: 400;
+   color: #7d97ad;
+}
+
+.padding-end{
+   padding-top: 7px;
+   padding-bottom: 15px;
+}
+
+.padding-mid{
+   padding-top: 7px;
+   padding-bottom: 7px;
+}

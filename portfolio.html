@@ -2,49 +2,58 @@
 <html>
    <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
       <title>A Sample Portfolio</title>
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,100,300" rel="stylesheet" type="text/css">
       <link rel="stylesheet" href="css/bootstrap-theme.min.css">
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css">
    </head>
    <body>
-      <header>
-         <div class="row">
-            <div class="col-md-6"> <!--Logo-->
-               <img class="img-responsive" src="http://placehold.it/120x120"/>
-            </div>
-            <div class="col-md-6"> <!--Name-->
-               <h1>JANE DOETTE</h1>
-               <h4>FRONT-END NINJA</h4>
-            </div>
-         </div>
-         <hr>
-      </header>
+      <div class="container">
 
-      <section>
-         <div class="row, col-md-12"> <!--Main Image-->
-            <img class="img-responsive" src="http://placehold.it/1200x480"/>
-         </div>
-         <div class="row, col-md-12"> <!--Featured Work-->
-            <h2>Featured Work</h2>
-         </div>
-         <div class="row">
-            <div class="col-md-4"> <!--Appify-->
-               <img class="img-responsive" src="http://placehold.it/360x360"/>
-               <h3>APPIFY</h3>
-               link info
+         <header>
+            <div class="row title">
+               <div class="col-md-6"> <!--Logo-->
+                  <img class="img-responsive" src="http://placehold.it/120x120" alt="Logo Image"/>
+               </div>
+               <div class="col-md-6 text-right text-uppercase"> <!--Name-->
+                  <h1>Jane Doette</h1>
+                  <h4>Front-end Ninja</h4>
+               </div>
             </div>
-            <div class="col-md-4"> <!--Sunflower-->
-               <img class="img-responsive" src="http://placehold.it/360x360"/>
-               <h3>SUNFLOWER</h3>
-               link info
+            <hr>
+         </header>
+
+         <section>
+            <div class="row"> <!--Main Image-->
+               <div class="col-md-12 padding-mid">
+                  <img class="img-responsive" src="http://placehold.it/1200x480" alt="Image Defining Portfolio"/>
+               </div>
             </div>
-            <div class="col-md-4"><!--Bokeh-->
-               <img class="img-responsive" src="http://placehold.it/360x360"/>
-               <h3>BOKEH</h3>
-               link info
+            <div class="row"> <!--Featured Work-->
+               <div class="col-md-12">
+                  <h2 class="section-title padding-mid">Featured Work</h2>
+               </div>
             </div>
-         </div>
-      </section>
+            <div class="row">
+               <div class="col-md-4 padding-end"> <!--Appify-->
+                  <img class="img-responsive" src="http://placehold.it/450x320" alt="Image Defining Appify"/>
+                  <h3 class="text-uppercase">Appify</h3>
+                  link info
+               </div>
+               <div class="col-md-4 padding-end"> <!--Sunflower-->
+                  <img class="img-responsive" src="http://placehold.it/450x320" alt="Image Defining Sunflower"/>
+                  <h3 class="text-uppercase">Sunflower</h3>
+                  link info
+               </div>
+               <div class="col-md-4 padding-end"><!--Bokeh-->
+                  <img class="img-responsive" src="http://placehold.it/450x320" alt="Image Defining Bokeh"/>
+                  <h3 class="text-uppercase">Bokeh</h3>
+                  link info
+               </div>
+            </div>
+         </section>
+      </div>
    </body>
 </html>
