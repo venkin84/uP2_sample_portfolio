@@ -27,13 +27,21 @@
 
          <section class="container">
             <div class="row"> <!--Main Image-->
-               <div class="col-md-12 padding-end">
-                  <img class="img-responsive" src="img/main-image-large.jpeg" alt="Image Defining Portfolio"/>
+               <div class="col-md-12 padding-mid">
+                  <picture class="img-responsive img-align">
+                     <source
+                        media="(max-width: 500px)"
+                        srcset="img/main-image-small.jpg"/>
+                     <source
+                        media="(max-width: 800px)"
+                        srcset="img/main-image-medium.jpg"/>
+                     <img src="img/main-image-large.jpeg" alt="Image Defining Portfolio"/>
+                  </picture>
                </div>
             </div>
             <div class="row"> <!--Featured Work-->
                <div class="col-md-12">
-                  <h2 class="section-title padding-mid">Featured Work</h2>
+                  <h2 class="section-title padding-start">Featured Work</h2>
                </div>
             </div>
             <div class="row">
