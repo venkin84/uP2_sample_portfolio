@@ -5,17 +5,17 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <title>A Sample Portfolio</title>
       <link href="https://fonts.googleapis.com/css?family=Lato:400,100,300" rel="stylesheet" type="text/css">
-      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/zocial.css">
+      <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
    </head>
    <body>
-      <div class="container">
-
-         <header>
-            <div class="row title">
+      <header class="container">
+            <div class="row title padding-start">
                <div class="col-md-6"> <!--Logo-->
-                  <img class="img-responsive" src="http://placehold.it/120x120" alt="Logo Image"/>
+                  <img class="img-responsive" src="img/logo.png" alt="Logo Image"/>
                </div>
                <div class="col-md-6 text-right text-uppercase"> <!--Name-->
                   <h1>Jane Doette</h1>
@@ -25,10 +25,10 @@
             <hr>
          </header>
 
-         <section>
+         <section class="container">
             <div class="row"> <!--Main Image-->
-               <div class="col-md-12 padding-mid">
-                  <img class="img-responsive" src="http://placehold.it/1200x480" alt="Image Defining Portfolio"/>
+               <div class="col-md-12 padding-end">
+                  <img class="img-responsive" src="img/main-image-large.jpeg" alt="Image Defining Portfolio"/>
                </div>
             </div>
             <div class="row"> <!--Featured Work-->
@@ -38,22 +38,100 @@
             </div>
             <div class="row">
                <div class="col-md-4 padding-end"> <!--Appify-->
-                  <img class="img-responsive" src="http://placehold.it/450x320" alt="Image Defining Appify"/>
-                  <h3 class="text-uppercase">Appify</h3>
-                  link info
+                  <img class="img-responsive img-align" src="img/appify.jpeg" alt="Image Defining Appify" data-toggle="modal" data-target="#appifyModal"/>
+                  <h3 class="text-uppercase text-center margin-subtitle">Appify</h3>
+                  <div class="text-center"><a href="#">https://github.com/udacity/Appify</a></div>
                </div>
                <div class="col-md-4 padding-end"> <!--Sunflower-->
-                  <img class="img-responsive" src="http://placehold.it/450x320" alt="Image Defining Sunflower"/>
-                  <h3 class="text-uppercase">Sunflower</h3>
-                  link info
+                  <img class="img-responsive img-align" src="img/sunflower.jpg" alt="Image Defining Sunflower" data-toggle="modal" data-target="#sunflowerModal"/>
+                  <h3 class="text-uppercase text-center margin-subtitle">Sunflower</h3>
+                  <div class="text-center"><a href="#">https://github.com/udacity/Sunflower</a></div>
                </div>
                <div class="col-md-4 padding-end"><!--Bokeh-->
-                  <img class="img-responsive" src="http://placehold.it/450x320" alt="Image Defining Bokeh"/>
-                  <h3 class="text-uppercase">Bokeh</h3>
-                  link info
+                  <img class="img-responsive img-align" src="img/bokeh.jpg" alt="Image Defining Bokeh" data-toggle="modal" data-target="#bokehModal"/>
+                  <h3 class="text-uppercase text-center margin-subtitle">Bokeh</h3>
+                  <div class="text-center"><a href="#">https://github.com/udacity/Bokeh</a></div>
                </div>
             </div>
          </section>
+
+      <div id="appifyModal" class="modal fade" tabindex="-1" role="dialog" >
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="button" data-dismiss="modal">x</button>
+                  <h4 class="modal-title text-uppercase modal-title-text" id="appifyModelLabel">Appify</h4>
+               </div>
+               <div class="modal-body">
+                  <img class="img-responsive img-align" src="img/appify.jpeg" alt="Image Defining Appify" />
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Cras sapien purus, tristique vitae finibus sit amet, pharetra ut nibh.
+                     Ut volutpat pellentesque est sed tincidunt.
+                     Aenean erat nibh, accumsan sed hendrerit et, tincidunt at ex.
+                     Curabitur leo lorem, ultrices et dignissim sed, convallis eget urna.
+                     Quisque mauris leo, convallis sed.
+                  </p>
+               </div>
+               <div class="modal-footer">
+                  <a class="zocial icon facebook"></a>
+                  <a class="zocial icon twitter"></a>
+                  <a class="zocial icon linkedin"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="sunflowerModal" class="modal fade" tabindex="-1" role="dialog" >
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="button" data-dismiss="modal">x</button>
+                  <h4 class="modal-title text-uppercase modal-title-text" id="sunflowerModelLabel">Sunflower</h4>
+               </div>
+               <div class="modal-body">
+                  <img class="img-responsive img-align" src="img/sunflower.jpg" alt="Image Defining Appify" />
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Cras sapien purus, tristique vitae finibus sit amet, pharetra ut nibh.
+                     Ut volutpat pellentesque est sed tincidunt.
+                     Aenean erat nibh, accumsan sed hendrerit et, tincidunt at ex.
+                     Curabitur leo lorem, ultrices et dignissim sed, convallis eget urna.
+                     Quisque mauris leo, convallis sed.
+                  </p>
+               </div>
+               <div class="modal-footer">
+                  <a class="zocial icon facebook"></a>
+                  <a class="zocial icon twitter"></a>
+                  <a class="zocial icon linkedin"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="bokehModal" class="modal fade" tabindex="-1" role="dialog" >
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="button" data-dismiss="modal">x</button>
+                  <h4 class="modal-title text-uppercase modal-title-text" id="bokehModelLabel">Bokeh</h4>
+               </div>
+               <div class="modal-body">
+                  <img class="img-responsive img-align" src="img/bokeh.jpg" alt="Image Defining Appify"/>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Cras sapien purus, tristique vitae finibus sit amet, pharetra ut nibh.
+                     Ut volutpat pellentesque est sed tincidunt.
+                     Aenean erat nibh, accumsan sed hendrerit et, tincidunt at ex.
+                     Curabitur leo lorem, ultrices et dignissim sed, convallis eget urna.
+                     Quisque mauris leo, convallis sed.
+                  </p>
+               </div>
+               <div class="modal-footer">
+                  <a class="zocial icon facebook"></a>
+                  <a class="zocial icon twitter"></a>
+                  <a class="zocial icon linkedin"></a>
+               </div>
+            </div>
+         </div>
       </div>
    </body>
 </html>
