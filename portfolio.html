@@ -13,57 +13,55 @@
    </head>
    <body>
       <header class="container">
-            <div class="row title padding-start">
-               <div class="col-md-6"> <!--Logo-->
-                  <img class="img-responsive" src="img/logo.png" alt="Logo Image"/>
-               </div>
-               <div class="col-md-6 text-right text-uppercase"> <!--Name-->
-                  <h1>Jane Doette</h1>
-                  <h4>Front-end Ninja</h4>
-               </div>
+         <div class="row title padding-start">
+            <div class="col-md-6"> <!--Logo-->
+               <img class="img-responsive" src="img/logo.png" alt="Logo Image"/>
             </div>
-            <hr>
-         </header>
-
-         <section class="container">
-            <div class="row"> <!--Main Image-->
-               <div class="col-md-12 padding-mid">
-                  <picture class="img-responsive img-align">
-                     <source
-                        media="(max-width: 500px)"
-                        srcset="img/main-image-small.jpg"/>
-                     <source
-                        media="(max-width: 800px)"
-                        srcset="img/main-image-medium.jpg"/>
-                     <img src="img/main-image-large.jpeg" alt="Image Defining Portfolio"/>
-                  </picture>
-               </div>
+            <div class="col-md-6 text-right text-uppercase"> <!--Name-->
+               <h1>Jane Doette</h1>
+               <h4>Front-end Ninja</h4>
             </div>
-            <div class="row"> <!--Featured Work-->
-               <div class="col-md-12">
-                  <h2 class="section-title padding-start">Featured Work</h2>
-               </div>
+         </div>
+         <hr>
+      </header>
+      <section class="container">
+         <div class="row"> <!--Main Image-->
+            <div class="col-md-12 padding-mid">
+               <picture class="img-responsive img-align">
+                  <source
+                     media="(max-width: 500px)"
+                     srcset="img/main-image-small.jpg"/>
+                  <source
+                     media="(max-width: 800px)"
+                     srcset="img/main-image-medium.jpg"/>
+                  <img src="img/main-image-large.jpeg" alt="Image Defining Portfolio"/>
+               </picture>
             </div>
-            <div class="row">
-               <div class="col-md-4 padding-end"> <!--Appify-->
-                  <img class="img-responsive img-align" src="img/appify.jpeg" alt="Image Defining Appify" data-toggle="modal" data-target="#appifyModal"/>
-                  <h3 class="text-uppercase text-center margin-subtitle">Appify</h3>
-                  <div class="text-center"><a href="#">https://github.com/udacity/Appify</a></div>
-               </div>
-               <div class="col-md-4 padding-end"> <!--Sunflower-->
-                  <img class="img-responsive img-align" src="img/sunflower.jpg" alt="Image Defining Sunflower" data-toggle="modal" data-target="#sunflowerModal"/>
-                  <h3 class="text-uppercase text-center margin-subtitle">Sunflower</h3>
-                  <div class="text-center"><a href="#">https://github.com/udacity/Sunflower</a></div>
-               </div>
-               <div class="col-md-4 padding-end"><!--Bokeh-->
-                  <img class="img-responsive img-align" src="img/bokeh.jpg" alt="Image Defining Bokeh" data-toggle="modal" data-target="#bokehModal"/>
-                  <h3 class="text-uppercase text-center margin-subtitle">Bokeh</h3>
-                  <div class="text-center"><a href="#">https://github.com/udacity/Bokeh</a></div>
-               </div>
+         </div>
+         <div class="row"> <!--Featured Work-->
+            <div class="col-md-12">
+               <h2 class="section-title padding-start">Featured Work</h2>
             </div>
-         </section>
-
-      <div id="appifyModal" class="modal fade" tabindex="-1" role="dialog" >
+         </div>
+         <div class="row">
+            <div class="col-md-4 padding-end"> <!--Appify-->
+               <img class="img-responsive img-align" src="img/appify.jpeg" alt="Image Defining Appify" data-toggle="modal" data-target="#appifyModal"/>
+               <h3 class="text-uppercase text-center margin-subtitle">Appify</h3>
+               <div class="text-center"><a href="#">https://github.com/udacity/Appify</a></div>
+            </div>
+            <div class="col-md-4 padding-end"> <!--Sunflower-->
+               <img class="img-responsive img-align" src="img/sunflower.jpg" alt="Image Defining Sunflower" data-toggle="modal" data-target="#sunflowerModal"/>
+               <h3 class="text-uppercase text-center margin-subtitle">Sunflower</h3>
+               <div class="text-center"><a href="#">https://github.com/udacity/Sunflower</a></div>
+            </div>
+            <div class="col-md-4 padding-end"><!--Bokeh-->
+               <img class="img-responsive img-align" src="img/bokeh.jpg" alt="Image Defining Bokeh" data-toggle="modal" data-target="#bokehModal"/>
+               <h3 class="text-uppercase text-center margin-subtitle">Bokeh</h3>
+               <div class="text-center"><a href="#">https://github.com/udacity/Bokeh</a></div>
+            </div>
+         </div>
+      </section>
+      <div id="appifyModal" class="modal fade" tabindex="-1" role="dialog" > <!--Modal for Appify-->
          <div class="modal-dialog" role="document">
             <div class="modal-content">
                <div class="modal-header">
@@ -89,7 +87,7 @@
             </div>
          </div>
       </div>
-      <div id="sunflowerModal" class="modal fade" tabindex="-1" role="dialog" >
+      <div id="sunflowerModal" class="modal fade" tabindex="-1" role="dialog" > <!--Modal for Sunflower-->
          <div class="modal-dialog" role="document">
             <div class="modal-content">
                <div class="modal-header">
@@ -115,7 +113,7 @@
             </div>
          </div>
       </div>
-      <div id="bokehModal" class="modal fade" tabindex="-1" role="dialog" >
+      <div id="bokehModal" class="modal fade" tabindex="-1" role="dialog" > <!--Modal for Bokeh-->
          <div class="modal-dialog" role="document">
             <div class="modal-content">
                <div class="modal-header">
